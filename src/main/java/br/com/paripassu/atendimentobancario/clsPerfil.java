@@ -15,7 +15,7 @@ public abstract class clsPerfil {
 
     //Caso queira acrescentar o nome do usuario à senha é possível
     private String sNome; /* Nome da pessoa */
-    private int iChamada; /* 0 para senha não chamada. 1 para senha já chamada */
+    private int iChamada; /* 0 para cliente com senha não chamada. 1 para senha já chamada */
     
     /*Funções que configuram a classe para os dados atuais e armazenam no banco de dados*/
     /* Salvar os dados no banco de dados Postgree 9.3 ou posterior */
