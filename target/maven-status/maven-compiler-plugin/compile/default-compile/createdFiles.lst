@@ -1,0 +1,8 @@
+br\com\paripassu\atendimentobancario\clsGerente.class
+br\com\paripassu\atendimentobancario\clsPainelSenhasDAO.class
+br\com\paripassu\atendimentobancario\clsPerfil.class
+br\com\paripassu\atendimentobancario\clsClientesDAO.class
+br\com\paripassu\atendimentobancario\clsGerentesDAO.class
+br\com\paripassu\atendimentobancario\clsPainelSenhas.class
+br\com\paripassu\atendimentobancario\clsCliente.class
+br\com\paripassu\atendimentobancario\clsConexao.class

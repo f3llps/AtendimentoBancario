@@ -1,0 +1,175 @@
+/* Documento CSS */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+body{
+    
+    background-color: #F6F6F6;
+    
+}
+
+.container{
+	position:relative;
+	margin: 0 auto;
+	background-color: white;
+	font-family: "Myriad";
+	width: 450px;
+	border: solid;
+	border-color: gray;
+	border-width: 1px;
+	height: 420px;
+}
+
+#header{
+	border-bottom-color: gray;
+	border-width: 10px;
+	position : relative;
+}
+
+#footer{
+	color: gray;
+	font-size: 13px;
+	margin: 0 auto;
+	width: 450px;
+	clear: both; 
+	position:absolute;
+	bottom: 0px;
+	border: solid;
+	border-color: gray;
+	border-width: 1px;
+}
+
+#content{
+	position: relative;
+	margin: 0 auto;
+	font-weight: bold;
+	
+}
+
+#logo{
+	height: 80px;
+	width: 270px;
+	background-image: url("paripassu_pt.png");
+	background-repeat: no-repeat;
+	/*border: 0px solid;*/
+	/*background-position: center;*/
+	position: relative;
+	/*left: 50%;*/
+	margin: 0 auto;
+
+}
+
+#linha{
+	padding-top: 8px;
+	border-bottom-color: gray;
+	border-bottom-width: 1px;
+	width: 400px;
+	border-bottom-style: solid;
+	font-size: 25px;
+	color: black;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+#painel{
+        text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+        margin: 0 auto;
+	background-color: #8DC7CD;
+	width: 280px;
+	height: 80px;
+	color: #44AB34;
+        color: white;
+	font-size: 48px;
+	font-family: "Impact";
+	padding-top: 13px;
+	margin-top: 3px;
+	/*border: solid;
+	border-color: #58585A;
+	border-width: 5px;*/
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+#underline{
+	text-decoration: underline;
+}
+
+#radios{
+	margin: 0 auto;
+}
+
+a:visited{
+    color: black;
+}
+/* CSS para os Radiobuttons */
+label {
+  width: 120px;
+margin: 0 auto;
+position: relative;
+font-family: monospace; 
+font-size: 14px; 
+font-weight: bold;
+}
+
+/* hide input */
+input.radio:empty {
+	margin-left: -999px;
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 2.3em;
+	text-indent: 3em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	left: 60px;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	height:1.8em;
+	background: #8DC7CD; /* Azul claro*/
+	border-radius: 3px 3px 3px 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #7A7A77; /* Cinza */
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #7A7A77;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: black;
+	background-color: #8DC7CD;
+}
+
+input.radio:checked ~ label {
+	color: black;
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+	box-shadow: 0 0 0 3px #999;
+}
